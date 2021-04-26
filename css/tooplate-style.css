@@ -1,0 +1,553 @@
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+button { cursor: pointer; }
+a, button { transition: all 0.3s ease; }
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.container-fluid { 
+	padding-left: 0; 
+	padding-right: 0;
+	overflow-x: hidden;
+}
+
+.tm-section {
+	background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 640px;
+}
+
+.tm-section-home { background-image: url(../img/image-01.jpg); }
+.tm-section-about { background-image: url(../img/image-06.jpg); }
+.tm-section-services { background-image: url(../img/image-03.jpg); }
+.tm-section-testimonials { background-image: url(../img/image-04.jpg); }
+.tm-section-contact { background-image: url(../img/image-05.jpg); }
+
+.navbar-toggler {
+    background-color: rgba(0,0,0,0.3);
+    background-image: url(../img/tm-navbar.png);
+    border-radius: 0;
+    border: none;
+    color: rgb(255,255,255);
+    display: block;
+    margin: 0 auto;     
+}
+
+button:focus { outline: none; }
+h1, h2, p {	color: white; }
+
+p { 
+	font-weight: 300;
+	line-height: 1.8;
+	margin-bottom: 35px;
+}
+
+.tm-section-title {
+	color: #fdff73;
+	font-size: 1.8rem;
+	margin-bottom: 40px;	
+}
+
+.tm-section-title-big { font-size: 2.2rem; }
+
+.tm-nav {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+    -ms-flex-pack: center;
+        -webkit-justify-content: center;
+            justify-content: center;
+	position: fixed;
+    width: 100%;  
+    transition: all 0.3s ease;  
+    z-index: 1000;
+}
+
+.tm-nav.scroll {
+    background: rgba(0, 0, 0, 0.50);
+    padding: 0;
+}
+
+.tm-nav.scroll .navbar { padding: 0; }
+.nav-link, .nav-link:focus { color: white; }
+
+.nav-link:hover,
+.tm-nav ul li .current { color: #fff1ab; }
+
+.navbar-nav .nav-link {
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.tm-hero {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	    -webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	    -webkit-justify-content: center;
+	        justify-content: center;
+	text-align: center;
+	min-height: 640px; /*for IE 11 & 10*/
+}
+
+.tm-hero-title { font-size: 3rem; }
+.tm-hero-subtitle { 
+	font-size: 1.4rem; 
+	margin-bottom: 0;
+}
+
+.tm-hero-title,
+.tm-hero-subtitle {
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.tm-bg-black-translucent { background-color: rgba(0, 0, 0, 0.5); }
+
+.tm-content-box {
+	height: 100%;
+	min-height: 640px;
+	max-width: 480px;	
+	padding: 40px;	
+	display: -ms-flexbox;	
+	display: -webkit-flex;	
+	display: flex;   
+	-webkit-flex-direction: column;   
+	    -ms-flex-direction: column;   
+	        flex-direction: column; 
+    -ms-flex-pack: center;    
+        -webkit-justify-content: center;    
+            justify-content: center;
+}
+
+.tm-content-box-right {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.tm-page-content-width {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.tm-flex-center {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+    -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: center;
+        -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.tm-textbox-padding { padding: 50px; }
+.tm-text-black { color: black; }
+.tm-fa { 
+	color: white;
+	padding-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+.tm-margin-b-0 { margin-bottom: 0; }
+
+.tm-section-testimonials { 
+	padding-top: 80px; 
+	padding-bottom: 80px;
+}
+
+.form-control {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	border-radius: 0;
+	font-size: 1.15rem;
+	padding: .9rem 1.25rem;
+}
+
+.form-control:focus {
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+}
+
+.form-group { margin-bottom: 1.2rem; }
+
+.tm-submit-btn {
+	color: white;
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+    padding: 1rem 2.1rem;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.tm-submit-btn:hover,
+.tm-submit-btn:active {
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+
+.tm-copyright-div {
+	padding: 0.5rem 2.4rem 0.5rem 1.2rem;
+	position: absolute;
+    bottom: 0;
+    display: inline-block;
+}
+
+.tm-copyright-text { margin-bottom: 0; }
+
+@media screen and (max-width: 991px) {
+	.tm-3-col-textbox {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.tm-copyright-div {	position: static; }
+}
+
+@media screen and (max-width: 767px) {
+	.tm-3-col-textbox {
+		float: none;
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.tm-navbar { background-color: rgba(0,0,0,0.6); }
+	.navbar-nav .nav-item {	float: none; }
+	.navbar-nav .nav-item+.nav-item { margin-left: 0; }
+	.navbar { width: 100%; }
+
+	.navbar-toggleable-sm .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-height: 639px) {
+	.tm-section-home,
+	.tm-hero {
+		height: 100vh;
+		min-height: 100%;
+	}
+}
+
+.desc{
+	color: aliceblue;
+	text-indent: 2%;
+	margin-top: 20%;	
+}
+
+.tm-section-titles {
+	color: #fdff73;
+	font-size: 1.8rem;	
+}
+
+li{
+	color: azure;
+}
+t{
+	color: chocolate;
+	font-size: medium;
+}
+
+
+
+img{
+	width: 100%;
+}
+
+
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
+  
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+.download{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 4%;
+	
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 20px 50px 20px 50px;
+	
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+

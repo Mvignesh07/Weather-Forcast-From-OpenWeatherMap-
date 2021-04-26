@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather Report</title>
+    <link rel="icon" alt="title" href="data:image/png;base64,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">
+
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+                                   
+
+</head>
+
+    <body>
+
+        <div class="container-fluid">
+            <!-- Navigation -->        
+
+            
+            <section class="tm-section tm-section-home tm-flex-center" id="home">                
+                
+                <div class="tm-hero">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="text-uppercase tm-hero-title">Live Weather Forecast</h1>
+                            <p class="tm-hero-subtitle">Using OpenWeatherMap web service URL in Sapui5...</p>
+                            <div class="desc">
+                                <des style="text-indent: 10%;">In this tutorial, we are going to create a SAP MII application to display weather forecast information using an API. I have used OpenWeatherMap service to implement this with SAP MII. We will just grab the weather information provided by the API and display it in the application.</des>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+
+            </section>
+            
+            <!-- Section 2 -->
+            <section class="tm-section tm-section-about" id="about">
+
+                <div class="tm-page-content-width">
+
+                    <div class="tm-bg-black-translucent tm-content-box tm-content-box-right tm-flex-center">
+                        
+                        <div class="tm-content-box-inner">
+                            <h2 class="tm-section-title">Prerequisites</h2>
+                    
+                           
+                                <ul div="list">
+                                <li>SAP Web IDE instance – either trial or production (Eg: sap netweaver)</li>
+                                <li>Knowledge in UI5 development and data binding</li>
+                                <li>Modern web browser (chrome/firefox etc.)</li>
+                                <li>Weather Forecast URL from Open Weather Map</li>
+                                </ul>  <br>
+                            
+                                <h2 class="tm-section-title">OpenWeatherMap URL</h2>
+  
+                            <p>I used web service url in this project is given below,<br><b><t>https://api.openweathermap.org/data/2.5/weather?q={CITY NAME}&appid={API ID}</t></b> <br>
+
+                                Example:<br>
+                                <b><t>https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=60bab3f0f3e6d69db68e049b3990b213</t></b><br>
+                                
+                                After loading, it will have the JSON formatted data containing an array of datails. Each array item contains the data's like latitude, longitude, country, city/state,temp,huminity, city id.</p>   
+
+                        </div>                        
+                    </div>                    
+                </div>
+                
+            </section>
+            
+            <!-- Section 3 -->
+            <section class="tm-section tm-section-services" id="services">
+
+                <div class="tm-page-content-width">
+                    <div class="tm-bg-black-translucent tm-content-box tm-flex-center">
+                        
+                        <div class="tm-content-box-inner">
+                            <h2 class="tm-section-title">Get Weather Forecast Data to Transaction</h2>
+                            <p style="text-indent: 10%;">This is the Transcation to request the OpenWeatherMap service to get the weather forecasts. While sending the request, the API key and the city id is sent with request URL query string. I used TEXT LOADER to send the API request. It response will be in a JSON format. we can get the weather data.</p>
+                           <div class="tran"><img src="img/image-07.png" alt="Transaction"></div>
+                        </div>                        
+                    </div> 
+                </div>                
+            </section>
+
+            <!-- Section 4 -->
+            <section class="tm-section tm-section-testimonials" id="testimonials">
+                <div class="tm-page-content-width">
+                    <h2 style="color:black;font-size: 1.8rem;margin-bottom: 20px;text-align: center;font-weight: bolder;"><b>XML code for Weather forecast data</b></h2>
+                                                                 
+                            <p style="color:black;font-size: 1rem;margin-bottom: 30px;font-weight: bolder;text-indent: 10%;">An XML view is one of the predefined view types that are available in SAPUI5. The XML view type is defined in an XML file. The file name either ends with. In the XML view I defined structure of the content that can be displayed in browser window.</p>  
+                            <div class="xml"><img src="img/Screenshot (30).png" alt="View"></div><br><br>
+                                    
+                    <h2 style="color:black;font-size: 1.8rem;margin-bottom: 20px;text-align: center;font-weight: bolder;"><b>JS code for Binding Weather forecast data</b></h2>
+                            <p style="color:black;font-size: 1rem;margin-bottom: 30px;font-weight: bolder;text-indent: 10%;">In Transaction I get weather forecast data using URL. And the data would be called in Controller. The term AJAX is short for Asynchronous Javascript And XML. AJAX makes it possible to fetch content from a server in the background (asynchronously). Using AJAX call I get particuler city data to controller and set data in gatview model. And display Weather report in Microchart and Graph format. </p>  
+
+                            <div class="xml"><img src="img/Screenshot (32).png" alt="View"></div>
+                            <div class="xml"><img src="img/Screenshot (33).png" alt="View"></div>
+                            <div class="xml"><img src="img/Screenshot (34).png" alt="View"></div>
+                            <div class="xml"><img src="img/Screenshot (35).png" alt="View"></div>
+                                  
+                                
+                            </div>
+                                                         
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <!-- Section 5 -->
+            <section class="tm-section tm-section-contact" id="contact">
+                <div class="tm-page-content-width"><br><br>
+                    <h2 style="text-align: center;" class="tm-section-title"><b>Output of Weather forecast using OpenWeatherMap URL</b></h2>
+                    <div class="xml"><img src="img/Screenshot (36).png" alt="View"></div>
+                    
+                    
+                    <div class="xml"><img src="img/Screenshot (37).png" alt="View"></div>
+                    
+
+                
+                    
+                </div>
+                <div class="download"><a href="https://github.com/Mvignesh07/Live_Weather_Forecast" class="buttonDownload">Download Code</a></div>
+        
+                  
+                
+            </section>
+
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+              
+                    <h3>VIG<span>NESH</span></h3>
+    
+    
+                    <p class="footer-company-name">© 2021 Craeted by Vignesh</p>
+                </div>
+    
+                <div class="footer-center">
+                  
+    
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About Me</span>
+                        I'm Vignesh || B.E (Computer Science and Engineering) || Programing Skills : Java, Javascript, Mysql, HTML, Sap Mii.</p>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/vignesh.m.9440234"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vigneshamutha/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/@Vignesh42970498"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/vignesh-m-07645219a/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+      
+
+
+        </div>
+        
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
+        <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>  <!-- Single page nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        
+        <script>     
+          
+            // Check scroll position and add/remove background to navbar
+            function checkScrollPosition() {
+                
+                if($(window).width() < 767) {
+                    $(".tm-nav").removeClass("scroll");
+                    return;
+                }
+
+                if($(window).scrollTop() > 50) {
+                  $(".tm-nav").addClass("scroll");
+              } else {        
+                  $(".tm-nav").removeClass("scroll");
+              }
+            }
+
+            $(document).ready(function () {   
+                // Single page nav
+                $('.tm-nav').singlePageNav({
+                    offset: 57,
+                    filter: ':not(.external)',
+                    updateHash: true        
+                });
+
+                checkScrollPosition();
+
+                // navbar
+                $('.navbar-toggle').click(function(){
+                    $('.main-menu').toggleClass('show');
+                });
+
+                $('.main-menu a').click(function(){
+                    $('.main-menu').removeClass('show');
+                });
+            });
+
+            $(window).on("scroll", function() {
+                checkScrollPosition();    
+            });
+
+            $('#tmNavbar a').click(function(){
+                $('#tmNavbar').collapse('hide');
+            });
+
+        </script>             
+
+</body>
+</html>
